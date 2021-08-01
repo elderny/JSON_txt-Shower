@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderny Ajax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .type {}
+</style>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Elderom Ajax</a>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <h1>Elderom Library</h1>
+        <hr>
+        <form>
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Options</legend>
+                <div class="col-sm-10 form_type">
+                    <div class="form-check typechk">
+                        <input class="form-check-input type" type="checkbox" name="type" id="Fruits" value="Fruits"
+                            checked>
+                        <label class="form-check-label" for="Fruits">
+                            Fruits
+                        </label>
+                    </div>
+                    <div class="form-check typechk">
+                        <input class="form-check-input type" type="checkbox" name="type1" id="Vegetables"
+                            value="Vegetables">
+                        <label class="form-check-label" for="Vegetables">
+                            Vegetables
+                        </label>
+                    </div>
+                    <button type="button" id="getItems" class="btn btn-primary my-3">Get Items</button>
+                </div>
+            </fieldset>
+        </form>
+        <hr>
+        <div style="display: flex;" class="my-3">
+            <div class="card" style="width: 50rem; margin-right:20px; height:50vh; overflow: auto;">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Fruits</h2>
+                    <hr>
+                    <ol class="card-text" id="FruitsLst" style="font-family: cascadia code;">
+
+                    </ol>
+                </div>
+            </div>
+            <div class="card" style=" width:50rem; overflow: auto">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Vegetables</h2>
+                    <hr>
+                    <ol class="card-text" id="VegetablesLst" style="font-family: cascadia code;">
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <footer class="bg-light text-center text-lg-start chk fixed-bottom">
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: #212529da; color:white;">
+                    © 2021 - Infinity Copyright by Elderny
+                </div>
+                <!-- Copyright -->
+            </footer>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="js/ajax.js"></script>
+
+</html>
